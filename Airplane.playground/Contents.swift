@@ -37,10 +37,6 @@ class Simulation {
         }
     }
     
-    private func seatTaken(_ seat: Int) {
-        seatsAvaialble.remove(seat)
-    }
-    
     @MainActor func run() -> Bool {
         passengers.shuffle()
         for i in 0..<100 {
